@@ -51,10 +51,13 @@ function Calendar({
         day_hidden: "invisible",
         ...classNames,
       }}
-      components={{
-        IconLeft: ({ ..._props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ..._props }) => <ChevronRight className="h-4 w-4" />,
-      }}
+      // components={{
+      //   Icon: ({ icon }) => {
+      //     if (icon === "previous") return <ChevronLeft className="h-4 w-4" />;
+      //     if (icon === "next") return <ChevronRight className="h-4 w-4" />;
+      //     return <></>;
+      //   },
+      // }}
       {...props}
     />
   );

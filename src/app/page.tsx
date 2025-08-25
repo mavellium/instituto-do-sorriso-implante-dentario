@@ -7,7 +7,6 @@ import Hero from "@/components/Hero";
 import Specialists from "@/components/Specialists";
 import Testimonials from "@/components/Testimonials";
 import Treatments from "@/components/Treatments";
-import Image from "next/image";
 
 export default function Home() {
   return (

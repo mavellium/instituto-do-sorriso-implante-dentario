@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { Card } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
@@ -63,7 +64,7 @@ const Testimonials = () => {
               
               {/* Testimonial text */}
               <blockquote className="text-[rgb(130,140,160)] italic leading-relaxed mb-8 text-sm">
-                "{testimonial.text}"
+                {testimonial.text}
               </blockquote>
               
               {/* Patient info */}
