@@ -7,9 +7,9 @@ export default function SectionVideo() {
   return (
     <section className="py-10 mb-10">
       <div className="flex justify-center items-center flex-col text-center sm:px-10 px-5 max-w-[1000px] m-auto">
-        {/* <h1 className="mb-5 sm:text-[32px] text-[24px] font-semibold text-wrap lg:text-nowrap">
-          Quer saber se o TegPro é pra você? Assista ao vídeo abaixo.
-        </h1> */}
+        <h1 className="mb-5 sm:text-[32px] text-[24px] text-[rgb(52,66,86)] font-bold text-wrap lg:text-nowrap">
+          Sorriso confiante? Venha para a <span className="text-[rgb(0,119,255)] font-bold">Instituto Sorriso.</span>
+        </h1>
 
         <figure
           className="w-full max-w-[800px] aspect-video relative rounded-2xl overflow-hidden shadow-[0_8px_24px_hsl(210_100%_45%/0.6)] cursor-pointer"
