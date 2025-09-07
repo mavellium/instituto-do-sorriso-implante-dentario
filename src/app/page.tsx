@@ -4,6 +4,7 @@ import ButtonWhatsapp from "@/components/ButtonWhatsapp";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import SectionVideo from "@/components/SectionVideo";
 import Specialists from "@/components/Specialists";
 import Testimonials from "@/components/Testimonials";
 import Treatments from "@/components/Treatments";
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <main>
         <Hero></Hero>
+        <SectionVideo></SectionVideo>
         <Benefits></Benefits>
         <About></About>
         <Treatments></Treatments>
