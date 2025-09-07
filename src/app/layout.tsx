@@ -4,7 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Insitituto do Sorriso",
+  title: "Instituto do Sorriso",
   description: "Transformamos sorrisos.",
   icons: {
     icon: "/favicon.ico",
