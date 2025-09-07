@@ -8,7 +8,7 @@ export default function SectionVideo() {
     <section className="py-10 mb-10">
       <div className="flex justify-center items-center flex-col text-center sm:px-10 px-5 max-w-[1000px] m-auto">
         <h1 className="mb-5 sm:text-[32px] text-[24px] text-[rgb(52,66,86)] font-bold text-wrap lg:text-nowrap">
-          Sorriso confiante? Venha para o <span className="text-[rgb(0,119,255)] font-bold">Instituto Sorriso.</span>
+          Sorriso confiante? Venha para o <span className="text-[rgb(0,119,255)] font-bold">Instituto do Sorriso.</span>
         </h1>
 
         <figure
