@@ -106,7 +106,7 @@ const About = () => {
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-[hsl(210_100%_45%)]" />
                 <span className="text-sm text-[hsl(215_16%_47%)]">
-                  Avaliação gratuita
+                  Avaliação
                 </span>
               </div>
               <Badge

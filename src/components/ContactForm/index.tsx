@@ -18,7 +18,7 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Aqui você pode integrar com seu sistema de envio
-    const whatsappMessage = `Olá! Gostaria de agendar uma avaliação gratuita.%0A%0ANome: ${formData.name}%0ATelefone: ${formData.phone}%0AWhatsApp: ${formData.whatsapp}%0AMensagem: ${formData.message}`;
+    const whatsappMessage = `Olá! Gostaria de agendar uma avaliação.%0A%0ANome: ${formData.name}%0ATelefone: ${formData.phone}%0AWhatsApp: ${formData.whatsapp}%0AMensagem: ${formData.message}`;
     window.open(`https://wa.me/5511999999999?text=${whatsappMessage}`, '_blank');
   };
 
@@ -36,7 +36,7 @@ const ContactForm = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Agende sua{" "}
             <span className="text-primary font-bold">
-              Avaliação Gratuita
+              Avaliação
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

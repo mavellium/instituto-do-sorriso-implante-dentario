@@ -66,7 +66,6 @@ const Footer = () => {
                 <Phone className="w-5 h-5 flex-shrink-0" style={{ color: "hsl(var(--primary))" }} />
                 <div style={{ color: "rgb(255 255 255 / 0.9)" }}>
                   <p>(11) 3456-7890</p>
-                  <p>(11) 99999-9999</p>
                 </div>
               </div>
 
@@ -128,9 +127,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p style={{ color: "rgb(255 255 255 / 0.6)" }}>© 2025 Instituto do Sorriso. Todos os direitos reservados.</p>
             <div className="flex items-center gap-4" style={{ color: "rgb(255 255 255 / 0.6)" }}>
-              <span>Dr. Calebe Jr. - CRO: 108562/SP</span>
+              <span>Dr. Calebe Jr. - CRO/RT: 108562/SP</span>
               <span>|</span>
-              <span>Dra. Luana - CRO: 108581/SP</span>
+              <span>Dra. Luana - CRO/RT: 108581/SP</span>
             </div>
           </div>
         </div>

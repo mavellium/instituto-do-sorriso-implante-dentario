@@ -34,7 +34,7 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Agende sua avaliação gratuita e conheça o tratamento ideal para
+                Agende sua avaliação e conheça o tratamento ideal para
                 você. Transforme seu sorriso com tecnologia de ponta e cuidado
                 humanizado.
               </p>
@@ -75,7 +75,7 @@ const Hero = () => {
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-gray-800">
-                  Avaliação Gratuita
+                  Avaliação
                 </span>
               </div>
             </div>

@@ -21,22 +21,21 @@ const treatments = [
       "Resultado estético indistinguível de um dente natural",
       "Restauração completa da função mastigatória",
       "Procedimento minimamente invasivo com tecnologia guiada",
-      "Osseointegração garantida em 3-6 meses",
+      "Osseointegração garantida em 3 meses",
       "Durabilidade superior a 20 anos com cuidados adequados"
     ],
     safetyFeatures: [
       "Ambiente cirúrgico com esterilização classe hospitalar",
       "Implantes certificados pela ANVISA e FDA",
-      "Tomografia 3D para planejamento preciso",
       "Medicação pré e pós-operatória incluída"
     ],
-    duration: "2-3 consultas ao longo de 3-6 meses",
+    duration: "4 a 5 meses (dentro de condições normais)",
     badge: "Mais Procurado",
     image: implanteImage,
     idealFor: "Pacientes que perderam 1 a 3 dentes e possuem estrutura óssea adequada",
     process: "Avaliação clínica e tomográfica → Cirurgia de implante → Período de cicatrização → Colocação da coroa definitiva",
     recoveryInfo: "Pós-operatório confortável com medicação adequada. Retorno às atividades normais em 2-3 dias.",
-    whatsappMessage: "Olá! Quero saber mais sobre Implante Unitário e agendar minha avaliação gratuita."
+    whatsappMessage: "Olá! Quero saber mais sobre Implante Unitário e agendar minha avaliação."
   },
   {
     icon: Users,
@@ -59,13 +58,13 @@ const treatments = [
       "Sedação consciente disponível para maior conforto",
       "Acompanhamento pós-operatório especializado"
     ],
-    duration: "3-4 consultas ao longo de 4-6 meses",
+    duration: "6 a 7 meses",
     badge: "Solução Completa",
     image: protocoloImage,
     idealFor: "Pacientes edêntulos totais ou com poucos dentes remanescentes comprometidos",
     process: "Avaliação completa → Planejamento digital → Cirurgia e prótese provisória → Cicatrização → Prótese definitiva",
     recoveryInfo: "Pós-operatório controlado com medicação e dieta orientada. Adaptação gradual à nova prótese.",
-    whatsappMessage: "Olá! Quero saber mais sobre Prótese Protocolo e agendar minha avaliação gratuita."
+    whatsappMessage: "Olá! Quero saber mais sobre Prótese Protocolo e agendar minha avaliação."
   }
 ];
 
@@ -85,7 +84,7 @@ const Treatments = () => {
           </p>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', borderRadius: '0.5rem', background: 'hsl(200,100%,95%)', border: '1px solid hsl(210,100%,45%,0.2)' }}>
             <Star style={{ width: '1.25rem', height: '1.25rem', color: 'hsl(210,100%,45%)' }} />
-            <span style={{ color: 'hsl(210,100%,45%)', fontWeight: 500 }}>Avaliação gratuita • Plano personalizado • Sem compromisso</span>
+            <span style={{ color: 'hsl(210,100%,45%)', fontWeight: 500 }}>Avaliação • Plano personalizado • Sem compromisso</span>
           </div>
         </div>
 
@@ -277,7 +276,7 @@ const Treatments = () => {
                 className="text-center leading-relaxed"
                 style={{ color: "hsl(var(--muted-foreground))" }}
               >
-                Cada caso é único. Durante sua avaliação gratuita, nossos especialistas farão exames
+                Cada caso é único. Durante sua avaliação, nossos especialistas farão exames
                 clínicos e radiográficos para determinar qual tratamento oferece o melhor resultado
                 para sua situação específica, considerando aspectos médicos, estéticos e funcionais.
               </p>
@@ -297,7 +296,7 @@ const Treatments = () => {
               className="mb-6 max-w-2xl mx-auto leading-relaxed"
               style={{ color: "hsl(var(--muted-foreground))" }}
             >
-              Agende sua <strong>avaliação gratuita e sem compromisso</strong>. Nossa equipe
+              Agende sua <strong>avaliação e sem compromisso</strong>. Nossa equipe
               especializada realizará todos os exames necessários e apresentará um plano de
               tratamento personalizado, explicando cada etapa do processo para que você se sinta
               totalmente seguro e informado sobre sua decisão.
@@ -307,7 +306,7 @@ const Treatments = () => {
               <Button
                 onClick={() => {
                   window.open(
-                    "https://wa.me/5514996847415?text=Olá! Quero agendar minha avaliação gratuita para implantes dentários. Preciso de orientação sobre qual tratamento é ideal para mim.",
+                    "https://wa.me/5514996847415?text=Olá! Quero agendar minha avaliação para implantes dentários. Preciso de orientação sobre qual tratamento é ideal para mim.",
                     "_blank"
                   );
                 }}
@@ -315,7 +314,7 @@ const Treatments = () => {
                 className="font-medium h-14 px-8 rounded-lg transition-all duration-300 hover:shadow-lg"
               >
                 <MessageCircle className="w-6 h-6 mr-2" />
-                Agendar Avaliação Gratuita
+                Agendar Avaliação
               </Button>
 
               <div

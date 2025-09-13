@@ -9,7 +9,7 @@ import Image from "next/image";
 const specialists = [
   {
     name: "Dr. Calebe Jr.",
-    cro: "CRO: 108562/SP",
+    cro: "CRO/RT: 108562/SP",
     specialty: "Especialista em Implantodontia e Reabilitação Oral",
     image: drCalebeImage,
     specialties: [
