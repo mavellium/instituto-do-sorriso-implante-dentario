@@ -5,8 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, CheckCircle, Clock, MessageCircle, Star } from "lucide-react";
-import implanteImage from "@/../public/implantes.jpg";
-import protocoloImage from "@/../public/protocolo.jpg";
+import implanteImage from "@/../public/implantes.png";
 
 const treatments = [
   {
@@ -60,7 +59,7 @@ const treatments = [
     ],
     duration: "6 a 7 meses",
     badge: "Solução Completa",
-    image: protocoloImage,
+    image: "/protocolo.jpg",
     idealFor: "Pacientes edêntulos totais ou com poucos dentes remanescentes comprometidos",
     process: "Avaliação completa → Planejamento digital → Cirurgia e prótese provisória → Cicatrização → Prótese definitiva",
     recoveryInfo: "Pós-operatório controlado com medicação e dieta orientada. Adaptação gradual à nova prótese.",
@@ -70,21 +69,21 @@ const treatments = [
 
 const Treatments = () => {
   return (
-    <section style={{ padding: '5rem 0', background: 'linear-gradient(to bottom, hsl(220,13%,95%,0.3), hsl(0,0%,100%))' }}>
+    <section style={{ padding: '5rem 0', background: 'linear-gradient(to bottom right, #010A1B, #06204D, #041737' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <h2 style={{ fontSize: '2.25rem', fontWeight: 700, marginBottom: '1.5rem', color: 'hsl(215,25%,27%)' }}>
+          <h2 style={{ fontSize: '2.25rem', fontWeight: 700, marginBottom: '1.5rem', color: '#BFD1EA' }}>
             Implante Dentário ou Prótese Protocolo?{" "}
-            <span style={{ color: 'hsl(210,100%,45%)', fontWeight: 700 }}>
+            <span style={{ color: '#0077FF', fontWeight: 700 }}>
               Encontre a Melhor Solução
             </span>
           </h2>
-          <p style={{ fontSize: '1.125rem', color: 'hsl(215,16%,47%)', maxWidth: '48rem', margin: '0 auto 1.5rem' }}>
+          <p style={{ fontSize: '1.125rem', color: '#BFD1EA', maxWidth: '48rem', margin: '0 auto 1.5rem' }}>
             O <strong>Implante Unitário</strong> é ideal para quem perdeu um ou poucos dentes, enquanto a <strong>Prótese Protocolo</strong> reabilita uma arcada inteira com resultado rápido e definitivo.
           </p>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', borderRadius: '0.5rem', background: 'hsl(200,100%,95%)', border: '1px solid hsl(210,100%,45%,0.2)' }}>
-            <Star style={{ width: '1.25rem', height: '1.25rem', color: 'hsl(210,100%,45%)' }} />
-            <span style={{ color: 'hsl(210,100%,45%)', fontWeight: 500 }}>Avaliação • Plano personalizado • Sem compromisso</span>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', borderRadius: '0.5rem', background: '#0030836e', border: '1px solid #0B85FF' }}>
+            <Star style={{ width: '1.25rem', height: '1.25rem', color: '#0077FF' }} />
+            <span style={{ color: '#0077FF', fontWeight: 500 }}>Avaliação • Plano personalizado • Sem compromisso</span>
           </div>
         </div>
 
@@ -92,7 +91,7 @@ const Treatments = () => {
           {treatments.map((treatment, index) => (
             <Card
               key={index}
-              className="p-0 h-full border-2 border-[hsl(220,13%,91%)] bg-white relative overflow-hidden transition-all duration-300 hover:border-[hsl(200,70%,80%)]"
+              className="p-0 h-full border-2 border-[#005DFF] bg-[#000919] relative overflow-hidden transition-all duration-300 hover:border-[#005DFF]"
             >
               {/* Badge */}
               <div style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', zIndex: 10 }}>
@@ -123,40 +122,40 @@ const Treatments = () => {
               {/* Content */}
               < div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div>
-                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'hsl(215,25%,27%)' }}>{treatment.title}</h3>
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: '#B9C2D8' }}>{treatment.title}</h3>
                   <p style={{ fontWeight: 500, color: 'hsl(210,100%,45%)', marginBottom: '0.75rem' }}>{treatment.subtitle}</p>
-                  <p style={{ color: 'hsl(215,16%,47%)', lineHeight: 1.6, marginBottom: '1rem' }}>{treatment.description}</p>
+                  <p style={{ color: '#BFD1EA', lineHeight: 1.6, marginBottom: '1rem' }}>{treatment.description}</p>
 
-                  <div style={{ background: 'hsl(200,100%,95%,0.3)', padding: '1rem', borderRadius: '0.5rem', marginBottom: '1rem' }}>
-                    <p style={{ fontSize: '0.875rem', color: 'hsl(215,16%,47%)', lineHeight: 1.6 }}>{treatment.detailedDescription}</p>
+                  <div style={{ background: '#0059ff5d', padding: '1rem', borderRadius: '0.5rem', marginBottom: '1rem' }}>
+                    <p style={{ fontSize: '0.875rem', color: '#BFD1EA', lineHeight: 1.6 }}>{treatment.detailedDescription}</p>
                   </div>
 
                   {/* Indicado para */}
                   <div style={{ padding: '0.75rem', background: 'hsl(210,100%,45%,0.05)', borderRadius: '0.5rem', marginBottom: '1rem', border: '1px solid hsl(210,100%,45%,0.2)' }}>
                     <p style={{ fontSize: '0.75rem', color: 'hsl(210,100%,45%)', fontWeight: 500, marginBottom: '0.25rem' }}>Indicado para</p>
-                    <p style={{ fontSize: '0.875rem', color: 'hsl(215,25%,27%)' }}>{treatment.idealFor}</p>
+                    <p style={{ fontSize: '0.875rem', color: '#B9C2D8' }}>{treatment.idealFor}</p>
                   </div>
                 </div>
 
                 {/* Benefícios e segurança */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  <h4 style={{ fontWeight: 600, fontSize: '0.875rem', color: 'hsl(215,25%,27%)' }}>Benefícios do Tratamento:</h4>
+                  <h4 style={{ fontWeight: 600, fontSize: '0.875rem', color: '#B9C2D8' }}>Benefícios do Tratamento:</h4>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                     {treatment.features.map((feature, i) => (
                       <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                         <CheckCircle style={{ width: '1rem', height: '1rem', color: 'hsl(210,100%,45%)', flexShrink: 0, marginTop: '0.125rem' }} />
-                        <span style={{ fontSize: '0.875rem', color: 'hsl(215,16%,47%)', lineHeight: 1.6 }}>{feature}</span>
+                        <span style={{ fontSize: '0.875rem', color: '#BFD1EA', lineHeight: 1.6 }}>{feature}</span>
                       </div>
                     ))}
                   </div>
 
                   <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid hsl(220,13%,91%)' }}>
-                    <h4 style={{ fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.75rem', color: 'hsl(215,25%,27%)' }}>Segurança e Qualidade:</h4>
+                    <h4 style={{ fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.75rem', color: '#B9C2D8' }}>Segurança e Qualidade:</h4>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                       {treatment.safetyFeatures.map((safety, i) => (
                         <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                           <CheckCircle style={{ width: '1rem', height: '1rem', color: 'hsl(120,60%,40%)', flexShrink: 0, marginTop: '0.125rem' }} />
-                          <span style={{ fontSize: '0.875rem', color: 'hsl(215,16%,47%)', lineHeight: 1.6 }}>{safety}</span>
+                          <span style={{ fontSize: '0.875rem', color: '#BFD1EA', lineHeight: 1.6 }}>{safety}</span>
                         </div>
                       ))}
                     </div>
@@ -170,17 +169,17 @@ const Treatments = () => {
                       <Clock style={{ width: '1rem', height: '1rem', color: 'hsl(210,100%,45%)' }} />
                       <span style={{ fontSize: '0.875rem', fontWeight: 500, color: 'hsl(210,100%,45%)' }}>Duração do Tratamento</span>
                     </div>
-                    <p style={{ fontSize: '0.875rem', color: 'hsl(215,16%,47%)' }}>{treatment.duration}</p>
+                    <p style={{ fontSize: '0.875rem', color: '#BFD1EA' }}>{treatment.duration}</p>
                   </div>
 
                   <div>
-                    <h5 style={{ fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem', color: 'hsl(215,25%,27%)' }}>Etapas do Tratamento:</h5>
-                    <p style={{ fontSize: '0.875rem', color: 'hsl(215,16%,47%)', lineHeight: 1.6 }}>{treatment.process}</p>
+                    <h5 style={{ fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.5rem', color: '#B9C2D8' }}>Etapas do Tratamento:</h5>
+                    <p style={{ fontSize: '0.875rem', color: '#BFD1EA', lineHeight: 1.6 }}>{treatment.process}</p>
                   </div>
 
-                  <div style={{ background: 'hsl(120,60%,95%)', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid hsl(120,60%,85%)' }}>
-                    <h5 style={{ fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.25rem', color: 'hsl(120,60%,25%)' }}>Pós-operatório:</h5>
-                    <p style={{ fontSize: '0.875rem', color: 'hsl(120,60%,35%)' }}>{treatment.recoveryInfo}</p>
+                  <div style={{ background: '#0076002b', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid #13BD13' }}>
+                    <h5 style={{ fontSize: '0.875rem', fontWeight: 500, marginBottom: '0.25rem', color: '#13BD13' }}>Pós-operatório:</h5>
+                    <p style={{ fontSize: '0.875rem', color: '#C4FFC4' }}>{treatment.recoveryInfo}</p>
                   </div>
                 </div>
 
@@ -206,13 +205,13 @@ const Treatments = () => {
           <div
             className="rounded-xl p-8 border"
             style={{
-              background: "linear-gradient(to right, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.1))",
-              borderColor: "hsl(var(--primary) / 0.2)",
+              background: "#012159",
+              borderColor: "#0073E6",
             }}
           >
             <h3
               className="text-xl font-bold text-center mb-6"
-              style={{ color: "hsl(var(--foreground))" }}
+              style={{ color: "#B9C2D8" }}
             >
               Precisa de mais informações para tomar sua decisão?
             </h3>
@@ -229,7 +228,7 @@ const Treatments = () => {
 
                 <ul
                   className="text-sm space-y-3 leading-relaxed"
-                  style={{ color: "hsl(var(--muted-foreground))" }}
+                  style={{ color: "#BFD1EA" }}
                 >
                   <li>• <strong>Quantidade:</strong> Perda de 1 a 3 dentes específicos</li>
                   <li>• <strong>Preservação:</strong> Dentes adjacentes estão saudáveis</li>
@@ -249,7 +248,7 @@ const Treatments = () => {
 
                 <ul
                   className="text-sm space-y-3 leading-relaxed"
-                  style={{ color: "hsl(var(--muted-foreground))" }}
+                  style={{ color: "#BFD1EA" }}
                 >
                   <li>• <strong>Quantidade:</strong> Perda de muitos ou todos os dentes</li>
                   <li>• <strong>Eficiência:</strong> Reabilita toda a arcada com poucos implantes</li>
@@ -262,19 +261,19 @@ const Treatments = () => {
             <div
               className="mt-8 p-6 rounded-lg border"
               style={{
-                background: "hsl(var(--background))",
-                borderColor: "hsl(var(--primary) / 0.2)",
+                background: "#02348D",
+                borderColor: "#0249C8",
               }}
             >
               <h5
                 className="font-semibold mb-3 text-center"
-                style={{ color: "hsl(var(--foreground))" }}
+                style={{ color: "#B9C2D8" }}
               >
                 Nossa Recomendação Profissional:
               </h5>
               <p
                 className="text-center leading-relaxed"
-                style={{ color: "hsl(var(--muted-foreground))" }}
+                style={{ color: "#BFD1EA" }}
               >
                 Cada caso é único. Durante sua avaliação, nossos especialistas farão exames
                 clínicos e radiográficos para determinar qual tratamento oferece o melhor resultado
@@ -287,14 +286,14 @@ const Treatments = () => {
           <div className="text-center mt-16">
             <h3
               className="text-2xl font-bold mb-4"
-              style={{ color: "hsl(var(--foreground))" }}
+              style={{ color: "#B9C2D8" }}
             >
               Vamos encontrar a melhor solução para você
             </h3>
 
             <p
               className="mb-6 max-w-2xl mx-auto leading-relaxed"
-              style={{ color: "hsl(var(--muted-foreground))" }}
+              style={{ color: "#BFD1EA" }}
             >
               Agende sua <strong>avaliação e sem compromisso</strong>. Nossa equipe
               especializada realizará todos os exames necessários e apresentará um plano de
@@ -319,7 +318,7 @@ const Treatments = () => {
 
               <div
                 className="flex items-center gap-2 text-sm"
-                style={{ color: "hsl(var(--muted-foreground))" }}
+                style={{ color: "#BFD1EA" }}
               >
                 <Star className="w-4 h-4" style={{ color: "hsl(var(--primary))" }} />
                 <span>

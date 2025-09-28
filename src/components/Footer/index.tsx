@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="py-16" style={{ backgroundColor: "hsl(var(--foreground))", color: "hsl(var(--primary-foreground))" }}>
+    <footer className="py-16" style={{ backgroundColor: "#000919", color: "hsl(var(--primary-foreground))" }}>
       <div className="container mx-auto px-4">
         {/* Grid principal */}
         <div className="grid md:grid-cols-4 gap-12">
@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="space-y-6 md:col-span-1">
-            <h4 className="text-xl font-semibold" style={{ color: "hsl(var(--secondary))" }}>Contato</h4>
+            <h4 className="text-xl font-semibold" style={{ color: "#0077FF" }}>Contato</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 flex-shrink-0" style={{ color: "hsl(var(--primary))" }} />
@@ -78,7 +78,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-6 md:col-span-1">
-            <h4 className="text-xl font-semibold" style={{ color: "hsl(var(--secondary))" }}>Nossos Serviços</h4>
+            <h4 className="text-xl font-semibold" style={{ color: "#0077FF" }}>Nossos Serviços</h4>
             <ul className="space-y-2">
               {[
                 "Implantes Dentários",

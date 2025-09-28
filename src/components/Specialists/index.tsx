@@ -37,19 +37,19 @@ const specialists = [
 
 const Specialists = () => {
   return (
-    <section className="py-20 bg-[rgb(255,255,255)]">
+    <section className="py-20 bg-[#011331]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge className="bg-[rgb(0,119,255)/0.1] text-[rgb(0,119,255)] border border-[rgb(0,119,255)/0.3] mb-4">
+          <Badge className="bg-[#031A38] text-white border border-[#0D72F2] mb-4">
             Nossa Equipe
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[rgb(52,66,86)]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B9C3D8]">
             Excelência e cuidado em{" "}
-            <span className="text-[rgb(0,119,255)] font-bold">
+            <span className="text-[#0077FF] font-bold">
               cada detalhe do seu sorriso
             </span>
           </h2>
-          <p className="text-lg text-[rgb(130,140,160)] max-w-2xl mx-auto">
+          <p className="text-lg text-[#BFD1EA] max-w-2xl mx-auto">
             Conheça os especialistas que irão cuidar do seu sorriso com a mais alta qualidade técnica e humana
           </p>
         </div>
@@ -60,12 +60,12 @@ const Specialists = () => {
               key={index}
               className="overflow-hidden 
                 border-1,5
-                border-[rgb(229,231,235)] 
+                border-[#005DFF] 
                 rounded-2xl 
                 transition-all duration-300 
-                hover:border-[rgb(178,212,247)] 
+                hover:border-[#005DFF] 
                 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] 
-                bg-[rgb(255,255,255)] 
+                bg-[#002056] 
                 group
               "
             >
@@ -91,17 +91,17 @@ const Specialists = () => {
               {/* Content */}
               <div className="p-8 space-y-6">
                 <div>
-                  <Badge className="bg-[rgb(0,119,255)/0.1] text-[rgb(0,119,255)] border border-[rgb(0,119,255)/0.2] mb-3">
+                  <Badge className="bg-[#031A38] text-white border border-[#0D72F2] mb-3">
                     {specialist.specialty}
                   </Badge>
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-[rgb(52,66,86)] mb-4">Áreas de Atuação:</h4>
+                  <h4 className="font-semibold text-[#B9C2D8] mb-4">Áreas de Atuação:</h4>
                   {specialist.specialties.map((specialty, specialtyIndex) => (
                     <div key={specialtyIndex} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-[rgb(0,119,255)] mt-0.5 flex-shrink-0" />
-                      <span className="text-[rgb(130,140,160)] text-sm leading-relaxed">{specialty}</span>
+                      <span className="text-[#BFD1EA] text-sm leading-relaxed">{specialty}</span>
                     </div>
                   ))}
                 </div>
@@ -109,7 +109,7 @@ const Specialists = () => {
                 <div className="pt-4 border-t border-[rgb(220,220,220)]">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-[rgb(76,217,100)] rounded-full animate-pulse" />
-                    <span className="text-sm text-[rgb(130,140,160)]">Atendimento ativo</span>
+                    <span className="text-sm text-[#BFD1EA]">Atendimento ativo</span>
                   </div>
                 </div>
               </div>
@@ -118,14 +118,14 @@ const Specialists = () => {
         </div>
 
         <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-4 px-8 py-4 bg-[rgb(229,246,255,0.3)] rounded-2xl border border-[rgb(229,231,235)] 
+          <div className="inline-flex items-center gap-4 px-8 py-4 bg-[#0D72F24e] rounded-2xl border border-[#0D72F2] 
                   transition-all duration-300 
                   hover:border-[rgb(178,212,247)] 
                   hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)]">
             <Award className="w-8 h-8 text-[rgb(0,119,255)]" />
             <div className="text-left">
-              <div className="font-semibold text-[rgb(52,66,86)]">Profissionais Certificados</div>
-              <div className="text-sm text-[rgb(130,140,160)]">Registrados no CRO e em constante atualização</div>
+              <div className="font-semibold text-[#B9C3D8]">Profissionais Certificados</div>
+              <div className="text-sm text-[#BFD1EA]">Registrados no CRO e em constante atualização</div>
             </div>
           </div>
         </div>

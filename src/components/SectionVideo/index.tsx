@@ -5,10 +5,10 @@ export default function SectionVideo() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="py-10 mb-10">
+    <section className="py-10 bg-[#011331]">
       <div className="flex justify-center items-center flex-col text-center sm:px-10 px-5 max-w-[1000px] m-auto">
-        <h1 className="mb-5 sm:text-[32px] text-[24px] text-[rgb(52,66,86)] font-bold text-wrap lg:text-nowrap">
-          Sorriso confiante? Venha para o <span className="text-[rgb(0,119,255)] font-bold">Instituto do Sorriso.</span>
+        <h1 className="mb-5 sm:text-[32px] text-[24px] text-[#B9C2D8] font-bold text-wrap lg:text-nowrap">
+          Sorriso confiante? Venha para o <span className="text-[#0B85FF] font-bold">Instituto do Sorriso.</span>
         </h1>
 
         <figure
@@ -32,7 +32,7 @@ export default function SectionVideo() {
                 className="absolute top-0 left-0 w-full h-full bg-center bg-cover brightness-90 saturate-125 transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_12px_32px_hsl(210_100%_45%/0.8)] hover:brightness-100 hover:saturate-150"
                 style={{
                   backgroundImage:
-                    "url('/hero-dental.jpg')",
+                    "url('/thumb-video.png')",
                 }}
               />
 

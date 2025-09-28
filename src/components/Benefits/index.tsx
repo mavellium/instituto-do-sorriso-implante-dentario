@@ -26,16 +26,16 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-[rgb(255,255,255)] to-[rgb(240,243,250)]">
+    <section className="py-20 bg-[#011331]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[rgb(52,66,86)]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B9C2D8]">
             Por que escolher nossos{" "}
-            <span className="text-[rgb(0,119,255)] font-bold">
+            <span className="text-[#0B85FF] font-bold">
               Implantes Dentários
             </span>
           </h2>
-          <p className="text-lg text-[rgb(130,140,160)] max-w-2xl mx-auto">
+          <p className="text-lg text-[#BFD1EA] max-w-2xl mx-auto">
             Transforme sua vida com a mais avançada tecnologia em implantodontia
           </p>
         </div>
@@ -44,7 +44,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="group p-8 bg-[rgb(255,255,255)] rounded-2xl shadow-[0_4px_20px_-4px_rgba(52,66,86,0.1)] hover:shadow-[0_8px_30px_-8px_rgba(52,66,86,0.15)] transition-all duration-300 hover:scale-105 border border-[rgba(52,66,86,0.2)]"
+              className="group p-8 bg-[#012159] rounded-2xl shadow-[0_4px_20px_-4px_rgba(52,66,86,0.1)] hover:shadow-[0_8px_30px_-8px_rgba(52,66,86,0.15)] transition-all duration-300 hover:scale-105 border border-[rgba(52,66,86,0.2)]"
             >
               <div className="mb-6">
                 <div className="w-16 h-16 bg-gradient-to-r from-[rgb(0,119,255)] to-[rgb(0,80,204)] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -52,11 +52,11 @@ const Benefits = () => {
                 </div>
               </div>
               
-              <h3 className="font-semibold text-lg mb-3 text-[rgb(52,66,86)]">
+              <h3 className="font-semibold text-lg mb-3 text-[#BFD1EA]">
                 {benefit.title}
               </h3>
               
-              <p className="text-[rgb(130,140,160)] leading-relaxed">
+              <p className="text-[#BFD1EA] leading-relaxed">
                 {benefit.description}
               </p>
             </div>

@@ -32,16 +32,16 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-[rgb(255,255,255)]">
+    <section className="py-20 bg-[#012159]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[rgb(52,66,86)]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B9C3D8]">
             O que nossos{" "}
-            <span className="text-[rgb(0,119,255)] font-bold">
+            <span className="text-[#0077FF] font-bold">
               pacientes dizem
             </span>
           </h2>
-          <p className="text-lg text-[rgb(130,140,160)] max-w-2xl mx-auto">
+          <p className="text-lg text-[#BFD1EA] max-w-2xl mx-auto">
             Histórias reais de pessoas que transformaram suas vidas no Instituto do Sorriso
           </p>
         </div>
@@ -50,7 +50,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="p-8 h-full bg-[rgb(255,255,255)] border-2 border-[rgb(229,231,235)] hover:border-[rgb(0,119,255,0.3)] transition-all duration-300 hover:shadow-[0_8px_30px_-8px_rgba(52,66,86,0.15)] relative overflow-hidden group"
+              className="p-8 h-full bg-[#0000004e] border-2 border-[#0077FF] hover:border-[rgb(0,119,255,0.3)] transition-all duration-300 hover:shadow-[0_8px_30px_-8px_rgba(52,66,86,0.15)] relative overflow-hidden group"
             >
               {/* Background decoration */}
               <Quote className="absolute top-4 right-4 w-8 h-8 text-[rgb(0,119,255,0.2)] group-hover:text-[rgb(0,119,255.0.3)] transition-colors duration-300" />
@@ -58,12 +58,12 @@ const Testimonials = () => {
               {/* Rating */}
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, starIndex) => (
-                  <Star key={starIndex} className="w-5 h-5 fill-[rgb(253,203,113)] text-[rgb(253,203,113)]" />
+                  <Star key={starIndex} className="w-5 h-5 fill-[rgba(253, 204, 113, 0.16)] text-[rgb(253,203,113)]" />
                 ))}
               </div>
               
               {/* Testimonial text */}
-              <blockquote className="text-[rgb(130,140,160)] italic leading-relaxed mb-8 text-sm">
+              <blockquote className="text-[#BFD1EA] italic leading-relaxed mb-8 text-sm">
                 {testimonial.text}
               </blockquote>
               
@@ -75,9 +75,9 @@ const Testimonials = () => {
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="font-semibold text-[rgb(52,66,86)]">{testimonial.name}</h4>
-                  <p className="text-xs text-[rgb(130,140,160)]">{testimonial.age}</p>
-                  <p className="text-xs text-[rgb(0,119,255)] font-medium">{testimonial.treatment}</p>
+                  <h4 className="font-semibold text-[#B9C3D8]">{testimonial.name}</h4>
+                  <p className="text-xs text-[#BFD1EA]">{testimonial.age}</p>
+                  <p className="text-xs text-[#0077FF] font-medium">{testimonial.treatment}</p>
                 </div>
               </div>
             </Card>
@@ -85,10 +85,10 @@ const Testimonials = () => {
         </div>
         
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-[rgb(254,243,199)] rounded-lg border border-[rgb(253,203,113)]">
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-[rgba(254, 243, 199, 0.14)] rounded-lg border border-[rgb(253,203,113)]">
             <div className="flex gap-1">
               {[...Array(5)].map((_, index) => (
-                <Star key={index} className="w-4 h-4 fill-[rgb(253,203,113)] text-[rgb(253,203,113)]" />
+                <Star key={index} className="w-4 h-4 fill-[rgba(253, 204, 113, 0.11)] text-[rgb(253,203,113)]" />
               ))}
             </div>
             <span className="text-[rgb(178,145,57)] font-medium text-sm">

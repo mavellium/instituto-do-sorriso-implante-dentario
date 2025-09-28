@@ -13,23 +13,23 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-background to-muted/30">
+    <section id="contact" className="py-20 bg-gradient-to-br from-[#010A1B] via-[#06204D] to-[#041737]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[rgb(52,66,86)]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B9C3D8]">
             Entre em{" "}
-            <span className="text-[rgb(0,119,255)] font-bold">
+            <span className="text-[#0077FF] font-bold">
               Contato Conosco
             </span>
           </h2>
-          <p className="text-lg text-[rgb(130,140,160)] max-w-2xl mx-auto">
+          <p className="text-lg text-[#BFD1EA] max-w-2xl mx-auto">
             Estamos prontos para atendê-lo! Escolha a forma mais conveniente para entrar em contato.
           </p>
         </div>
 
         <div className="grid lg:grid-cols xl:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
           {/* WhatsApp */}
-          <Card className="p-6 text-center border-[rgb(229,231,235)] hover:border-[rgb(178,212,247)] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[rgb(255,255,255)] group">
+          <Card className="p-6 text-center border-[#22C55E] hover:border-[#22C55E] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#000B1F] group">
             <div className="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <svg
                 width="32"
@@ -43,14 +43,14 @@ const Contact = () => {
               </svg>
             </div>
 
-            <h3 className="text-lg font-bold mb-2 text-[rgb(52,66,86)]">WhatsApp</h3>
-            <p className="text-sm text-[rgb(130,140,160)] mb-4">
+            <h3 className="text-lg font-bold mb-2 text-[#B9C3D8]">WhatsApp</h3>
+            <p className="text-sm text-[#BFD1EA] mb-4">
               Converse diretamente com nossa equipe
             </p>
 
             <div className="space-y-1 mb-4">
               <p className="text-sm text-green-600 font-medium">📱 (14) 99684-7415</p>
-              <p className="text-xs text-[rgb(130,140,160)]">Resposta rápida</p>
+              <p className="text-xs text-[#BFD1EA]">Resposta rápida</p>
             </div>
 
             <Button
@@ -77,25 +77,25 @@ const Contact = () => {
           </Card>
 
           {/* Localização */}
-          <Card className="p-6 text-center border-[rgb(229,231,235)] hover:border-[rgb(178,212,247)] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[rgb(255,255,255)] group">
+          <Card className="p-6 text-center border-[#0077FF] hover:border-[#0077FF] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#012159] group">
             <div className="w-14 h-14 bg-[rgb(0,119,255)] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <MapPin className="w-7 h-7 text-white" />
             </div>
 
-            <h3 className="text-lg font-bold mb-2 text-[rgb(52,66,86)]">Localização</h3>
-            <p className="text-sm text-[rgb(130,140,160)] mb-4">
+            <h3 className="text-lg font-bold mb-2 text-[#B9C3D8]">Localização</h3>
+            <p className="text-sm text-[#BFD1EA] mb-4">
               Clínica no centro de Garça
             </p>
 
             <div className="space-y-1 mb-4">
-              <p className="text-sm font-medium text-[rgb(52,66,86)]">Rua das Flores, 123</p>
-              <p className="text-xs text-[rgb(130,140,160)]">Centro - Garça/SP</p>
+              <p className="text-sm font-medium text-[#B9C3D8]">Rua das Flores, 123</p>
+              <p className="text-xs text-[#BFD1EA]">Centro - Garça/SP</p>
             </div>
 
             <Button
               onClick={() => window.open('https://maps.google.com/?q=Rua+das+Flores+123+Garça+SP', '_blank')}
               variant="outline"
-              className="w-full border-[rgb(0,119,255)] text-[rgb(0,119,255)] hover:bg-[rgb(0,119,255)] hover:text-white h-10"
+              className="w-full border-[rgb(0,119,255)] text-[rgb(0,119,255)] bg-[#00102C] hover:bg-[rgb(0,119,255)] hover:text-white h-10"
             >
               <MapPin className="w-4 h-4 mr-2" />
               Ver no Mapa
@@ -103,25 +103,25 @@ const Contact = () => {
           </Card>
 
           {/* Horários */}
-          <Card className="p-6 text-center border-[rgb(229,231,235)] hover:border-[rgb(178,212,247)] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[rgb(255,255,255)] group">
+          <Card className="p-6 text-center border-[#0077FF] hover:border-[#0077FF] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#02348D] group">
             <div className="w-14 h-14 bg-[rgb(0,119,255)] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <Clock className="w-7 h-7 text-white" />
             </div>
 
-            <h3 className="text-lg font-bold mb-2 text-[rgb(52,66,86)]">Horários</h3>
-            <p className="text-sm text-[rgb(130,140,160)] mb-4">
+            <h3 className="text-lg font-bold mb-2 text-[#B9C3D8]">Horários</h3>
+            <p className="text-sm text-[#BFD1EA] mb-4">
               Funcionamento da clínica
             </p>
 
             <div className="space-y-1 mb-4">
-              <p className="text-xs text-[rgb(130,140,160)]">Seg à Sex: 8h às 18h</p>
-              <p className="text-xs text-[rgb(130,140,160)]">Sábados: 8h às 12h</p>
+              <p className="text-xs text-[#BFD1EA]">Seg à Sex: 8h às 18h</p>
+              <p className="text-xs text-[#BFD1EA]">Sábados: 8h às 12h</p>
             </div>
 
             <Button
               onClick={() => handleWhatsAppClick("Olá! Gostaria de agendar uma Consulta.")}
               variant="outline"
-              className="w-full border-[rgb(0,119,255)] text-[rgb(0,119,255)] hover:bg-[rgb(0,119,255)] hover:text-white h-10"
+              className="w-full border-[rgb(0,119,255)] text-[rgb(0,119,255)] bg-[#00102C] hover:bg-[rgb(0,119,255)] hover:text-white h-10"
             >
               <Clock className="w-4 h-4 mr-2" />
               Agendar Consulta
@@ -133,20 +133,20 @@ const Contact = () => {
         {/* Informações Complementares */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Localização Detalhada */}
-          <Card className="p-6 bg-white border-[rgb(229,231,235)] hover:border-[rgb(178,212,247)] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)]">
+          <Card className="p-6 bg-white border-[#0077FF] hover:border-[#0077FF] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#012159]">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[rgb(0,119,255)/10] rounded-lg flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-[rgb(0,119,255)]" />
               </div>
               <div>
-                <h4 className="font-semibold text-[rgb(52,66,86)] mb-2">Nossa Clínica</h4>
-                <p className="text-[rgb(130,140,160)] mb-3">
+                <h4 className="font-semibold text-[#B9C3D8] mb-2">Nossa Clínica</h4>
+                <p className="text-[#BFD1EA] mb-3">
                   <strong>Instituto do Sorriso</strong><br />
                   Rua das Flores, 123<br />
                   Centro - Garça/SP<br />
                   CEP: 17400-000
                 </p>
-                <div className="space-y-1 text-sm text-[rgb(130,140,160)]">
+                <div className="space-y-1 text-sm text-[#BFD1EA]">
                   <p>• Estacionamento gratuito</p>
                   <p>• Acesso para cadeirantes</p>
                   <p>• Ambiente climatizado</p>
@@ -156,21 +156,21 @@ const Contact = () => {
           </Card>
 
           {/* Atendimento */}
-          <Card className="p-6 bg-white border-[rgb(229,231,235)] hover:border-[rgb(178,212,247)] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)]">
+          <Card className="p-6 bg-white border-[#0077FF] hover:border-[#0077FF] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#012159]">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-[rgb(0,119,255)/10] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Clock className="w-6 h-6 text-[rgb(0,119,255)]" />
               </div>
               <div>
-                <h4 className="font-semibold text-[rgb(52,66,86)] mb-2">Atendimento</h4>
-                <div className="space-y-1 text-[rgb(130,140,160)] mb-3">
+                <h4 className="font-semibold text-[#B9C3D8] mb-2">Atendimento</h4>
+                <div className="space-y-1 text-[#BFD1EA] mb-3">
                   <p><strong>Segunda à Sexta:</strong> 8h às 18h</p>
                   <p><strong>Sábados:</strong> 8h às 12h</p>
                   <p><strong>Domingos:</strong> Fechado</p>
                 </div>
                 <div className="space-y-1 text-sm">
                   <p className="text-[rgb(0,119,255)] font-medium">• Emergências: 24h pelo WhatsApp</p>
-                  <p className="text-[rgb(130,140,160)]">• Agendamento online disponível</p>
+                  <p className="text-[#BFD1EA]">• Agendamento online disponível</p>
                 </div>
               </div>
             </div>
@@ -179,15 +179,14 @@ const Contact = () => {
 
         {/* CTA Final */}
         <div className="text-center mt-12 p-8 rounded-xl 
-                border border-[hsl(var(--primary)/0.2)] 
-                bg-gradient-to-r from-[hsl(210,100%,45%,0.05)] to-[hsl(200,100%,95%,0.1)] from-primary/5 to-accent/10 
-                hover:border-[rgb(178,212,247)] 
+                border border-[#0077FF] 
+                bg-[#011331]
                 transition-all duration-300 
                 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)]">
-          <h3 className="text-xl font-bold mb-4 text-[rgb(52,66,86)]">
+          <h3 className="text-xl font-bold mb-4 text-[#B9C3D8]">
             Estamos aqui para cuidar do seu sorriso
           </h3>
-          <p className="text-[rgb(130,140,160)] mb-6 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#BFD1EA] mb-6 max-w-2xl mx-auto leading-relaxed">
             Nossa equipe especializada está pronta para atendê-lo com o cuidado e atenção que você merece.
             Entre em contato conosco e descubra como podemos ajudá-lo a recuperar sua confiança e qualidade de vida.
           </p>
@@ -202,7 +201,7 @@ const Contact = () => {
               Falar com Nossa Equipe
             </Button>
 
-            <div className="flex items-center gap-2 text-sm text-[rgb(130,140,160)]">
+            <div className="flex items-center gap-2 text-sm text-[#BFD1EA]">
               <Mail className="w-4 h-4 text-[rgb(0,119,255)]" />
               <span>contato@institutodosorriso.com.br</span>
             </div>
