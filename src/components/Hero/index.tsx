@@ -69,16 +69,16 @@ const Hero = () => {
 
           {/* Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg border-3 border-[#003BA1]">
               <Image
                 src="/hero-dental.png"
                 width={800}
                 height={600}
                 priority
                 alt="Pessoa sorrindo com dentes perfeitos - Instituto do Sorriso"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[500px] object-cover border-3 border-[#003BA1]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+              <div className="" />
             </div>
 
             {/* Floating elements */}
