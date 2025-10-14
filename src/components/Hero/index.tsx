@@ -1,11 +1,32 @@
 "use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
-  const Hero = () => {
+const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    "/hero-dental.png",
+    "/hero-dental-2.png",
+    "/hero-dental-3.png",
+  ];
+
   const handleWhatsAppClick = (message: string) => {
-    window.open(`https://wa.me/5514996847415?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(
+      `https://wa.me/5514996847415?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   return (
@@ -31,8 +52,8 @@ import Image from "next/image";
               </h1>
 
               <p className="text-xl text-[#BFD1EA] leading-relaxed max-w-lg">
-                Agende sua avaliação e conheça o tratamento ideal para
-                você. Transforme seu sorriso com tecnologia de ponta e cuidado
+                Agende sua avaliação e conheça o tratamento ideal para você.
+                Transforme seu sorriso com tecnologia de ponta e cuidado
                 humanizado.
               </p>
             </div>
@@ -41,10 +62,10 @@ import Image from "next/image";
               <Button
                 size="lg"
                 onClick={() =>
-                handleWhatsAppClick(
-                  "Olá! Gostaria de agendar uma avaliação e saber mais sobre os tratamentos de implante dentário."
-                )
-              }
+                  handleWhatsAppClick(
+                    "Olá! Gostaria de agendar uma avaliação e saber mais sobre os tratamentos de implante dentário."
+                  )
+                }
                 className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-105"
               >
                 🦷 Quero Agendar Minha Avaliação
@@ -52,37 +73,44 @@ import Image from "next/image";
             </div>
           </div>
 
-          {/* Image */}
+          {/* Carousel Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg border-3 border-[#003BA1]">
               <Image
-                src="/hero-dental.png"
+                src={slides[currentSlide]}
                 width={800}
                 height={600}
                 priority
-                alt="Pessoa sorrindo com dentes perfeitos - Instituto do Sorriso"
-                className="w-full h-[500px] object-cover border-3 border-[#003BA1]"
+                alt={`Slide ${currentSlide + 1}`}
+                className="w-full h-[500px] object-cover border-3 border-[#003BA1] transition-transform duration-500"
               />
-              <div className="" />
             </div>
+
+            {/* Carousel Controls */}
+            <button
+              onClick={prevSlide}
+              className="absolute top-1/2 -left-15 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute top-1/2 -right-15 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
+            >
+              <ChevronRight size={24} />
+            </button>
 
             {/* Floating elements */}
             <div className="absolute -top-4 -right-4 bg-[#013AA0] p-4 rounded-xl shadow-md">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="text-sm font-medium text-white">
-                  Avaliação
-                </span>
+                <span className="text-sm font-medium text-white">Avaliação</span>
               </div>
             </div>
 
-            <div className="absolute -bottom-4 -left-4 bg-[#00102B] p-4 rounded-xl shadow-md">
-              <div className="text-center">
-                <div className="font-bold text-white text-lg">100%</div>
-                <div className="text-xs text-white">
-                  Satisfação
-                </div>
-              </div>
+            <div className="absolute -bottom-4 -left-4 bg-[#00102B] p-4 rounded-xl shadow-md text-center">
+              <div className="font-bold text-white text-lg">100%</div>
+              <div className="text-xs text-white">Satisfação</div>
             </div>
           </div>
         </div>
