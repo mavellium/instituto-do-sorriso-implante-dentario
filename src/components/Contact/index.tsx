@@ -88,12 +88,12 @@ const Contact = () => {
             </p>
 
             <div className="space-y-1 mb-4">
-              <p className="text-sm font-medium text-[#B9C3D8]">Rua das Flores, 123</p>
-              <p className="text-xs text-[#BFD1EA]">Centro - Garça/SP</p>
+              <p className="text-sm font-medium text-[#B9C3D8]">R. Cel. Joaquim Piza, 664</p>
+              <p className="text-xs text-[#BFD1EA]">Ferrarópolis, Garça - SP, 17402-084</p>
             </div>
 
             <Button
-              onClick={() => window.open('https://maps.google.com/?q=Rua+das+Flores+123+Garça+SP', '_blank')}
+              onClick={() => window.open('https://www.google.com/search?sca_esv=deb0b5a04aa924a5&rlz=1C1GCEA_enBR1173BR1173&sxsrf=AE3TifPcJWNyJUHO8gA1RKvNzURBsRUovQ:1760473851389&q=instituto+do+sorriso&source=lnms&fbs=AIIjpHydJdUtNKrM02hj0s4nbm4yAFb4PvhjIUcDtaFHkK_tyhpYuVI58uj-Rm0tXaavH3bOEpagtPXP7kZ9WllyLbvwEpasUGqdoc2sFMYcj2TWPaI-TopXt2y99Yvr6lj8nKJA-eazNxlNK7jJM8UjTPMJ9Ft4bn9nryfbxwt2jV-4vBsi3nGoE8uXxh8rv0EEm9B6Faj1H2qNEZNZsS2lDA-lPk4Z-eXp01DjKxUZ2u6Djy6gGug&sa=X&ved=2ahUKEwibpbGUxKSQAxWPq5UCHc3dBgQQ0pQJegQIDhAB&biw=1745&bih=866&dpr=1.1&lqi=ChRpbnN0aXR1dG8gZG8gc29ycmlzb0iyuPCSu7yAgAhaIhAAEAEQAhgAGAEYAiIUaW5zdGl0dXRvIGRvIHNvcnJpc2-SAQ1kZW50YWxfY2xpbmljmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ4d1VHUnRiRVJZTVhCMlRWZFNUVlZWZUU5UFZGcERVbTFuZDFwSFl4QUKqAXYKDS9nLzExdzIxY3NxYjUKDS9nLzExeGd0NXM3MWwQASoYIhRpbnN0aXR1dG8gZG8gc29ycmlzbygMMiAQASIcQvXv8u-K2TARqivDpC7wMfYPHfWAylKJoPFRWjIYEAIiFGluc3RpdHV0byBkbyBzb3JyaXNv-gEECAAQQQ#rlimm=4856183146057208336', '_blank')}
               variant="outline"
               className="w-full border-[rgb(0,119,255)] text-[rgb(0,119,255)] bg-[#00102C] hover:bg-[rgb(0,119,255)] hover:text-white h-10"
             >
@@ -129,54 +129,6 @@ const Contact = () => {
           </Card>
         </div>
 
-
-        {/* Informações Complementares */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Localização Detalhada */}
-          <Card className="p-6 bg-white border-[#0077FF] hover:border-[#0077FF] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#012159]">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-[rgb(0,119,255)/10] rounded-lg flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-6 h-6 text-[rgb(0,119,255)]" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#B9C3D8] mb-2">Nossa Clínica</h4>
-                <p className="text-[#BFD1EA] mb-3">
-                  <strong>Instituto do Sorriso</strong><br />
-                  Rua das Flores, 123<br />
-                  Centro - Garça/SP<br />
-                  CEP: 17400-000
-                </p>
-                <div className="space-y-1 text-sm text-[#BFD1EA]">
-                  <p>• Estacionamento gratuito</p>
-                  <p>• Acesso para cadeirantes</p>
-                  <p>• Ambiente climatizado</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          {/* Atendimento */}
-          <Card className="p-6 bg-white border-[#0077FF] hover:border-[#0077FF] transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(178,212,247,0.2)] bg-[#012159]">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-[rgb(0,119,255)/10] rounded-lg flex items-center justify-center flex-shrink-0">
-                <Clock className="w-6 h-6 text-[rgb(0,119,255)]" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-[#B9C3D8] mb-2">Atendimento</h4>
-                <div className="space-y-1 text-[#BFD1EA] mb-3">
-                  <p><strong>Segunda à Sexta:</strong> 8h às 18h</p>
-                  <p><strong>Sábados:</strong> 8h às 12h</p>
-                  <p><strong>Domingos:</strong> Fechado</p>
-                </div>
-                <div className="space-y-1 text-sm">
-                  <p className="text-[rgb(0,119,255)] font-medium">• Emergências: 24h pelo WhatsApp</p>
-                  <p className="text-[#BFD1EA]">• Agendamento online disponível</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-
         {/* CTA Final */}
         <div className="text-center mt-12 p-8 rounded-xl 
                 border border-[#0077FF] 
@@ -200,11 +152,6 @@ const Contact = () => {
               <MessageCircle className="w-5 h-5 mr-2" />
               Falar com Nossa Equipe
             </Button>
-
-            <div className="flex items-center gap-2 text-sm text-[#BFD1EA]">
-              <Mail className="w-4 h-4 text-[rgb(0,119,255)]" />
-              <span>contato@institutodosorriso.com.br</span>
-            </div>
           </div>
         </div>
       </div>
