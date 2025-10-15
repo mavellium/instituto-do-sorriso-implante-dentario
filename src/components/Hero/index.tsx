@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -10,8 +10,8 @@ const Hero = () => {
 
   const slides = [
     "/hero-dental.png",
-    "/hero-dental-2.png",
-    "/hero-dental-3.png",
+    "/hero-dental-2.jpg",
+    "/hero-dental-3.jpg",
   ];
 
   const handleWhatsAppClick = (message: string) => {
@@ -82,23 +82,38 @@ const Hero = () => {
                 height={600}
                 priority
                 alt={`Slide ${currentSlide + 1}`}
-                className="w-full h-[500px] object-cover border-3 border-[#003BA1] transition-transform duration-500"
+                className="w-full h-[500px] object-cover border-3 border-[#003BA1] transition-all duration-500"
               />
             </div>
 
             {/* Carousel Controls */}
             <button
               onClick={prevSlide}
-              className="absolute top-1/2 -left-15 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
+              className="absolute top-1/2 -left-6 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
             >
               <ChevronLeft size={24} />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute top-1/2 -right-15 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
+              className="absolute top-1/2 -right-6 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
             >
               <ChevronRight size={24} />
             </button>
+
+            {/* 🔵 Dots Indicator */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === currentSlide
+                      ? "bg-[#0073E6] scale-110"
+                      : "bg-[#B9C3D8]/40 hover:bg-[#B9C3D8]/70"
+                  }`}
+                />
+              ))}
+            </div>
 
             {/* Floating elements */}
             <div className="absolute -top-4 -right-4 bg-[#013AA0] p-4 rounded-xl shadow-md">
