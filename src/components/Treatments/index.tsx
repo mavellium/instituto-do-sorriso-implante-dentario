@@ -70,8 +70,8 @@ const treatments = [
 const Treatments = () => {
   return (
     <section style={{ padding: '5rem 0', background: 'linear-gradient(to bottom right, #010A1B, #06204D, #041737' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
-        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+      <div id="Prótese-Protocolo" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
+        <div id="Implantes-Dentários" style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '2.25rem', fontWeight: 700, marginBottom: '1.5rem', color: '#BFD1EA' }}>
             Implante Dentário ou Prótese Protocolo?{" "}
             <span style={{ color: '#0077FF', fontWeight: 700 }}>
