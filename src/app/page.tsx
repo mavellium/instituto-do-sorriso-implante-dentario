@@ -8,6 +8,7 @@ import SectionVideo from "@/components/SectionVideo";
 import Specialists from "@/components/Specialists";
 import Testimonials from "@/components/Testimonials";
 import Treatments from "@/components/Treatments";
+import Xray from "@/components/Xray";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Benefits></Benefits>
         <About></About>
         <Treatments></Treatments>
+        <Xray></Xray>
         <Specialists></Specialists>
         <Testimonials></Testimonials>
         <Contact></Contact>
