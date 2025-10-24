@@ -18,7 +18,7 @@ export default function SectionVideo() {
           {showVideo ? (
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-2xl"
-              // src="https://www.youtube.com/embed/hfJMWlZ0GhY?autoplay=1"
+              src="https://www.youtube.com/embed/9JJ7N_SLdy8?autoplay=1"
               title="Instituto Sorriso"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -31,14 +31,13 @@ export default function SectionVideo() {
               <div
                 className="absolute top-0 left-0 w-full h-full bg-center bg-cover brightness-90 saturate-125 transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_12px_32px_hsl(210_100%_45%/0.8)] hover:brightness-100 hover:saturate-150"
                 style={{
-                  backgroundImage:
-                    "url('/thumb-video.png')",
+                  backgroundImage: "url('/thumb-video.png')", // coloque aqui a thumbnail que você quer
                 }}
               />
 
-              {/* Botão Play customizado (#C9A050) */}
+              {/* Botão Play customizado */}
               <div className="absolute inset-0 flex items-center justify-center">
-               <div className="w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 bg-[linear-gradient(135deg,hsl(210_100%_45%)_0%,hsl(200_100%_50%)_100%)]">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 bg-[linear-gradient(135deg,hsl(210_100%_45%)_0%,hsl(200_100%_50%)_100%)]">
                   <div
                     className="ml-1"
                     style={{
