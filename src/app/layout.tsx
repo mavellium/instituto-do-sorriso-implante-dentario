@@ -3,6 +3,8 @@ import { Montserrat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
+
 export const metadata: Metadata = {
   title: "Instituto do Sorriso",
   description: "Transformamos sorrisos.",
@@ -11,14 +13,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className={`antialiased font-sans`}>
+      <body className={`${montserrat.className} antialiased font-sans`}>
+        {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-HJHT00LVC8"
@@ -37,4 +36,3 @@ export default function RootLayout({
     </html>
   );
 }
-

@@ -1,17 +1,14 @@
 "use client";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Clock, MessageCircle, Mail, Calendar } from "lucide-react";
+import { MapPin, Clock, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsAppClick = (message: string) => {
     window.open(`https://wa.me/5514996847415?text=${encodeURIComponent(message)}`, '_blank');
   };
 
-  const handlePhoneClick = () => {
-    window.open('tel:+551433245678', '_self');
-  };
-
+  
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-[#010A1B] via-[#06204D] to-[#041737]">
       <div className="container mx-auto px-4">
