@@ -9,8 +9,25 @@ export const metadata: Metadata = {
   title: "Instituto do Sorriso",
   description: "Transformamos sorrisos.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      // Light mode
+      {
+        url: "/favicon-light.png",
+        media: "(prefers-color-scheme: light)",
+        type: "image/png",
+      },
+      // Dark mode
+      {
+        url: "/favicon-dark.png",
+        media: "(prefers-color-scheme: dark)",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
   },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

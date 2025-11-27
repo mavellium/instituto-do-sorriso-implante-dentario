@@ -70,7 +70,7 @@ const Footer = () => {
             <p style={{ color: "rgb(255 255 255 / 0.6)" }}>© 2025 Instituto do Sorriso. Todos os direitos reservados.</p>
             {/* Powered by Mavellium */}
             <div className="flex flex-row items-center md:justify-self-end mt-8 md:mt-0 text-center md:text-right">
-              <span className="block font-semibold text-md" style={{ color: "hsl(var(--secondary))" }}>Desenvolvido por</span>
+              <span className="block text-md" style={{ color: "hsl(var(--secondary))" }}>Desenvolvido por</span>
               <Image
                 src="/logo-Mavellium.png"
                 alt="Logo Mavellium"

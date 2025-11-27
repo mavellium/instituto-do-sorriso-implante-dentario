@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, CheckCircle, Clock, MessageCircle, Star } from "lucide-react";
-import implanteImage from "@/../public/implantes.png";
+import implanteImage from "@/../public/implantes.avif";
 
 const treatments = [
   {
@@ -21,7 +21,7 @@ const treatments = [
       "Restauração completa da função mastigatória",
       "Procedimento minimamente invasivo com tecnologia guiada",
       "Osseointegração garantida em 3 meses",
-      "Durabilidade superior a 20 anos com cuidados adequados"
+      "Durabilidade superior a 3 meses com cuidados adequados"
     ],
     safetyFeatures: [
       "Ambiente cirúrgico com esterilização classe hospitalar",
@@ -59,7 +59,7 @@ const treatments = [
     ],
     duration: "6 a 7 meses",
     badge: "Solução Completa",
-    image: "/protocolo.jpg",
+    image: "/protocolo.avif",
     idealFor: "Pacientes edêntulos totais ou com poucos dentes remanescentes comprometidos",
     process: "Avaliação completa → Planejamento digital → Cirurgia e prótese provisória → Cicatrização → Prótese definitiva",
     recoveryInfo: "Pós-operatório controlado com medicação e dieta orientada. Adaptação gradual à nova prótese.",
@@ -73,7 +73,7 @@ const Treatments = () => {
       <div id="Prótese-Protocolo" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
         <div id="Implantes-Dentários" style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '2.25rem', fontWeight: 700, marginBottom: '1.5rem', color: '#BFD1EA' }}>
-            Implante Dentário ou Prótese Protocolo?{" "}
+            Implante Dentário ou Prótese Protocolo?{" "}<br></br>
             <span style={{ color: '#0077FF', fontWeight: 700 }}>
               Encontre a Melhor Solução
             </span>

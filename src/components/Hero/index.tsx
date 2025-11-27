@@ -9,7 +9,7 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "/hero-dental.png",
+    "/hero-dental.avif",
     "/hero-dental-2.jpg",
     "/hero-dental-3.jpg",
   ];
