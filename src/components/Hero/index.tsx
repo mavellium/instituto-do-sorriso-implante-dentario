@@ -89,29 +89,45 @@ const Hero = () => {
             {/* Carousel Controls */}
             <button
               onClick={prevSlide}
+              aria-label="Slide anterior"
+              title="Slide anterior"
               className="absolute top-1/2 -left-6 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
             >
               <ChevronLeft size={24} />
             </button>
             <button
               onClick={nextSlide}
+              aria-label="Próximo slide"
+              title="Próximo slide"
               className="absolute top-1/2 -right-6 -translate-y-1/2 bg-[#003BA1]/70 text-white p-3 rounded-full hover:bg-[#003BA1]/90 transition"
             >
               <ChevronRight size={24} />
             </button>
 
             {/* 🔵 Dots Indicator */}
-            <div className="flex justify-center mt-4 space-x-2">
+            <div className="flex justify-center mt-4 space-x-3">
               {slides.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentSlide
-                      ? "bg-[#0073E6] scale-110"
-                      : "bg-[#B9C3D8]/40 hover:bg-[#B9C3D8]/70"
-                  }`}
-                />
+                  aria-label={`Ir para o slide ${index + 1}`}
+                  title={`Ir para o slide ${index + 1}`}
+                  className={`
+        relative flex items-center justify-center 
+        w-4 h-4        /* 🔵 Área de toque de 32px */
+        rounded-full
+      `}
+                >
+                  <span
+                    className={`
+          w-3 h-3 rounded-full transition-all
+          ${index === currentSlide
+                        ? "bg-[#0073E6] scale-110"
+                        : "bg-[#B9C3D8]/40 hover:bg-[#B9C3D8]/70"
+                      }
+        `}
+                  />
+                </button>
               ))}
             </div>
 

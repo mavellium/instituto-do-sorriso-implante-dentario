@@ -74,7 +74,7 @@ const About = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[#0B85FF] mt-0.5 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold mb-1 text-white">Tecnologia de Ponta</h4>
+                  <h3 className="font-semibold mb-1 text-white">Tecnologia de Ponta</h3>
                   <p className="text-[#BFD1EA]">
                     Equipamentos modernos e técnicas minimamente invasivas
                   </p>
@@ -84,7 +84,7 @@ const About = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[hsl(210_100%_45%)] mt-0.5 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold mb-1 text-white">Atendimento Humanizado</h4>
+                  <h3 className="font-semibold mb-1 text-white">Atendimento Humanizado</h3>
                   <p className="text-[#BFD1EA]">
                     Cuidado personalizado desde a primeira consulta
                   </p>
@@ -94,7 +94,7 @@ const About = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-[hsl(210_100%_45%)] mt-0.5 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold mb-1 text-white">Garantia Total</h4>
+                  <h3 className="font-semibold mb-1 text-white">Garantia Total</h3>
                   <p className="text-[#BFD1EA]">
                     Acompanhamento completo e garantia de satisfação
                   </p>
