@@ -2,8 +2,8 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, CheckCircle } from "lucide-react";
-import drCalebeImage from "@/../public/dr-calebe.png";
-import drLuanaImage from "@/../public/dr-luana.png";
+import drCalebeImage from "@/../public/dr-calebe.avif";
+import drLuanaImage from "@/../public/dr-luana.avif";
 import Image from "next/image";
 
 const specialists = [

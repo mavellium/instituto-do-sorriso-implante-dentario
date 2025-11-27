@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -9,9 +9,9 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "/hero-dental.png",
-    "/hero-dental-2.jpg",
-    "/hero-dental-3.jpg",
+    "/hero-dental.avif",
+    "/hero-dental-2.avif",
+    "/hero-dental-3.avif",
   ];
 
   const handleWhatsAppClick = (message: string) => {

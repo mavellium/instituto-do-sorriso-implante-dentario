@@ -1,7 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 const Xray = () => {
@@ -19,12 +16,12 @@ const Xray = () => {
         </p>
 
         {/* Cards */}
-        <div className="flex flex-col xl:flex-row gap-10 w-full justify-center items-center">
+        <div className="flex flex-col xl:flex-row gap-10 w-full justify-center items-stretch">
           {/* Card 1 */}
-          <div className="w-full sm:w-[500px] xl:w-[560px] bg-[#000919] border-2 border-[#005DFF] rounded-lg overflow-hidden flex flex-col">
+          <div className="w-full sm:w-[500px] xl:w-[560px] bg-[#000919] border-2 border-[#005DFF] rounded-lg overflow-hidden flex flex-col h-auto">
             <div className="w-full h-auto">
               <Image
-                src="/xray.png"
+                src="/raio-x-panoramica.avif"
                 width={557}
                 height={300}
                 alt="Raio X panorâmico"
@@ -32,14 +29,14 @@ const Xray = () => {
               />
             </div>
 
-            <div className="flex flex-col text-start p-6">
+            <div className="flex flex-col text-start p-6 h-full">
               <h2 className="mb-3 text-[#B9C2D8] font-bold text-lg sm:text-xl">
                 Radiografia Panorâmica
               </h2>
               <p className="mb-4 text-[#0B85FF] text-sm sm:text-base">
                 Essencial para o planejamento de implantes.
               </p>
-              <p className="text-[#BFD1EA] text-sm sm:text-base leading-relaxed">
+              <p className="text-[#BFD1EA] text-sm sm:text-base leading-relaxed h-full">
                 Este exame nos dá uma visão completa de toda a sua boca,
                 incluindo todos os dentes, os ossos da maxila e mandíbula, e as
                 articulações. Com ela, avaliamos a saúde óssea geral e a posição
@@ -52,7 +49,7 @@ const Xray = () => {
           <div className="w-full sm:w-[500px] xl:w-[560px] bg-[#011638] border-2 border-[#005DFF] rounded-lg overflow-hidden flex flex-col">
             <div className="w-full h-auto">
               <Image
-                src="/tooth.png"
+                src="/raio-x-periapical.avif"
                 width={557}
                 height={300}
                 alt="Raio X periapical"

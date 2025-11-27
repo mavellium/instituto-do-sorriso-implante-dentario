@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Card } from "@/components/ui/card";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -44,42 +45,39 @@ const testimonials = [
 
 const TestimonialsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [cardsVisible, setCardsVisible] = useState(2); // Por padrão desktop
-
+  const [cardsVisible, setCardsVisible] = useState(2);
   const total = testimonials.length;
 
   // Responsividade
   useEffect(() => {
     const updateCardsVisible = () => {
-      if (window.innerWidth < 640) setCardsVisible(1); // Mobile
-      else setCardsVisible(2); // Desktop/tablet
+      setCardsVisible(window.innerWidth < 640 ? 1 : 2);
     };
-
     updateCardsVisible();
     window.addEventListener("resize", updateCardsVisible);
     return () => window.removeEventListener("resize", updateCardsVisible);
   }, []);
 
   // Navegação
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prev) =>
       prev + cardsVisible >= total ? 0 : prev + cardsVisible
     );
-  };
+  }, [cardsVisible, total]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prev) =>
       prev - cardsVisible < 0 ? Math.max(total - cardsVisible, 0) : prev - cardsVisible
     );
-  };
+  }, [cardsVisible, total]);
 
   // Auto-slide
   useEffect(() => {
     const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
-  }, [cardsVisible]); // Atualiza quando mudar cards visíveis
+  }, [nextSlide]);
 
-  // Slice dos cards visíveis
+  // Cards visíveis
   const visibleTestimonials = testimonials.slice(
     currentIndex,
     currentIndex + cardsVisible
@@ -91,12 +89,10 @@ const TestimonialsCarousel = () => {
         {/* Título */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B9C3D8]">
-            O que nossos{" "}
-            <span className="text-[#0077FF] font-bold">pacientes dizem</span>
+            O que nossos <span className="text-[#0077FF] font-bold">pacientes dizem</span>
           </h2>
           <p className="text-lg text-[#BFD1EA] max-w-2xl mx-auto">
-            Histórias reais de pessoas que transformaram suas vidas no Instituto
-            do Sorriso
+            Histórias reais de pessoas que transformaram suas vidas no Instituto do Sorriso
           </p>
         </div>
 
@@ -132,10 +128,12 @@ const TestimonialsCarousel = () => {
                 </div>
 
                 <div className="flex items-center gap-4 p-6 border-t border-[rgb(229,231,235)]">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={`Foto de ${testimonial.name}`}
-                    className="w-12 h-12 rounded-full object-cover"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover"
                   />
                   <div>
                     <h4 className="font-semibold text-[#B9C3D8]">{testimonial.name}</h4>
@@ -154,26 +152,23 @@ const TestimonialsCarousel = () => {
             <ChevronRight size={24} />
           </button>
         </div>
+
+        {/* Bolinhas */}
+        <div className="flex justify-center mt-6 gap-2">
+          {[0, 1, 2].map((pageIndex) => {
+            const isActive = currentIndex % 3 === pageIndex;
+            return (
+              <button
+                key={pageIndex}
+                onClick={() => setCurrentIndex(pageIndex)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  isActive ? "bg-[#0077FF]" : "bg-[rgba(255,255,255,0.3)]"
+                }`}
+              />
+            );
+          })}
+        </div>
       </div>
-
-      {/* Bolinhas */}
-          <div className="flex justify-center mt-6 gap-2">
-            {[0, 1, 2].map((pageIndex) => {
-              const isActive = currentIndex % 3 === pageIndex;
-              return (
-                <button
-                  key={pageIndex}
-                  onClick={() => setCurrentIndex(pageIndex)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    isActive
-                      ? "bg-[#0077FF]"
-                      : "bg-[rgba(255,255,255,0.3)]"
-                  }`}
-                />
-              );
-            })}
-          </div>
-
     </section>
   );
 };

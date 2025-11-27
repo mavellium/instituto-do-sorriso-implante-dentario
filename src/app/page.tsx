@@ -21,7 +21,7 @@ export default function Home() {
         <Treatments></Treatments>
         <Xray></Xray>
         <Specialists></Specialists>
-        <Testimonials></Testimonials>
+        {/* <Testimonials></Testimonials> */}
         <Contact></Contact>
       </main>
       <Footer></Footer>
