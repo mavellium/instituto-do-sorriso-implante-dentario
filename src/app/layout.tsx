@@ -8,27 +8,7 @@ const GTM_ID = "GTM-5D4N3KXM";
 
 export const metadata: Metadata = {
   title: "Instituto do Sorriso",
-  description: "Transformamos sorrisos.",
-  icons: {
-    icon: [
-      // Light mode
-      {
-        url: "/favicon-light.png",
-        media: "(prefers-color-scheme: light)",
-        type: "image/png",
-      },
-      // Dark mode
-      {
-        url: "/favicon-dark.png",
-        media: "(prefers-color-scheme: dark)",
-        type: "image/png",
-      },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180" },
-    ],
-  },
-  manifest: "/site.webmanifest",
+  description: "Transformamos sorrisos com tecnologia avançada, precisão estética e cuidado humanizado, oferecendo experiências odontológicas que resgatam autoestima e elevam a qualidade de vida.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
