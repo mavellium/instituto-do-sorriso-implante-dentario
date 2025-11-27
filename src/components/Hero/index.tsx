@@ -10,8 +10,8 @@ const Hero = () => {
 
   const slides = [
     "/hero-dental.avif",
-    "/hero-dental-2.jpg",
-    "/hero-dental-3.jpg",
+    "/hero-dental-2.avif",
+    "/hero-dental-3.avif",
   ];
 
   const handleWhatsAppClick = (message: string) => {

@@ -12,7 +12,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_40px_-12px_hsl(210_100%_45%/0.25)] w-full h-[500px] object-cover">
               <Image
-                src="/instituto.jpg"
+                src="/instituto.avif"
                 alt="Interior moderno do Instituto do Sorriso"
                 className="w-full h-[500px] object-cover"
                 fill
