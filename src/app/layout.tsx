@@ -6,17 +6,15 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
-  title: "Instituto do Sorriso",
-  description: "Transformamos sorrisos.",
+  title: "Implantes Dentários em Garça SP | Prótese Protocolo | Instituto do Sorriso",
+  description: "Recupere seu sorriso com Implantes Dentários e Prótese Protocolo em Garça, SP. 8+ anos de experiência, tecnologia e atendimento humanizado. Agende sua avaliação!",
   icons: {
     icon: [
-      // Light mode
       {
         url: "/favicon-light.png",
         media: "(prefers-color-scheme: light)",
         type: "image/png",
       },
-      // Dark mode
       {
         url: "/favicon-dark.png",
         media: "(prefers-color-scheme: dark)",
