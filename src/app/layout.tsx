@@ -9,7 +9,6 @@ const GTM_ID = "GTM-5D4N3KXM";
 export const metadata: Metadata = {
   title: "Instituto do Sorriso",
   description: "Transformamos sorrisos.",
-<<<<<<< HEAD
   icons: {
     icon: [
       // Light mode
@@ -30,8 +29,6 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
-=======
->>>>>>> d4c406f (GoogleTagMenager)
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
