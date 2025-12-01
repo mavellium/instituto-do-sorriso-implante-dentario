@@ -1,59 +1,66 @@
 "use client";
+import { Smile, Zap, Shield, Heart } from "lucide-react";
 
 const benefits = [
   {
-    title: "Dentes com Formatos Irregulares",
-    description:
-      "Ideal se você tem dentes muito pequenos, pontas desgastadas ou formatos que não harmonizam com seu rosto.",
+    icon: Smile,
+    title: "Estética Natural",
+    description: "Implantes que se integram perfeitamente ao seu sorriso natural"
   },
   {
-    title: "Espaços Indesejados (Diastemas)",
-    description:
-      "Corrigimos o afastamento entre os dentes sem necessidade de aparelho, fechando o sorriso de forma natural.",
+    icon: Zap,
+    title: "Mastigação Eficiente",
+    description: "Recupere 100% da sua capacidade mastigatória"
   },
   {
-    title: "Cor Insatisfatória Permanente",
-    description:
-      "Para dentes com manchas profundas ou escuros que não respondem mais ao clareamento convencional.",
+    icon: Shield,
+    title: "Resultado Definitivo",
+    description: "Solução permanente que dura toda a vida"
   },
+  {
+    icon: Heart,
+    title: "Procedimento Seguro",
+    description: "Técnicas modernas e totalmente indolores"
+  }
 ];
 
 const Benefits = () => {
   return (
-    <section className="py-16 sm:py-20 bg-[#000919]">
-      <div className="mx-auto max-w-[1400px] px-4">
-
-        {/* TÍTULO */}
-        <div className="px-2 sm:px-10 mb-10 sm:mb-16 w-full">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#B9C2D8] leading-tight">
-            Para quem é a Lente de Contato
-          </h1>
+    <section className="py-20 bg-[#011331]">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#B9C2D8]">
+            Por que escolher nossos{" "}
+            <span className="text-[#0B85FF] font-bold">
+              Implantes Dentários
+            </span>
+          </h2>
+          <p className="text-lg text-[#BFD1EA] max-w-2xl mx-auto">
+            Transforme sua vida com a mais avançada tecnologia em implantodontia
+          </p>
         </div>
-
-        {/* GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
-            <div
+            <div 
               key={index}
-              className="group p-6 sm:p-8 bg-black font-medium rounded-3xl
-              shadow-[0_4px_20px_-4px_rgba(52,66,86,0.1)]
-              hover:shadow-[0_8px_30px_-8px_rgba(52,66,86,0.15)]
-              transition-all duration-300 hover:scale-[1.03]
-              border border-[rgba(52,66,86,0.25)]"
+              className="group p-8 bg-[#012159] rounded-2xl shadow-[0_4px_20px_-4px_rgba(52,66,86,0.1)] hover:shadow-[0_8px_30px_-8px_rgba(52,66,86,0.15)] transition-all duration-300 hover:scale-105 border border-[rgba(52,66,86,0.2)]"
             >
-              {/* TÍTULO DO CARD */}
-              <h2 className="text-2xl sm:text-3xl text-[#B9C2D8] mb-3 leading-tight">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-[rgb(0,119,255)] to-[rgb(0,80,204)] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <benefit.icon className="w-8 h-8 text-white" />
+                </div>
+              </div>
+              
+              <h3 className="font-semibold text-lg mb-3 text-[#BFD1EA]">
                 {benefit.title}
-              </h2>
-
-              {/* DESCRIÇÃO */}
-              <p className="text-[#B9C2D8] text-lg sm:text-xl leading-relaxed">
+              </h3>
+              
+              <p className="text-[#BFD1EA] leading-relaxed">
                 {benefit.description}
               </p>
             </div>
           ))}
-
         </div>
       </div>
     </section>

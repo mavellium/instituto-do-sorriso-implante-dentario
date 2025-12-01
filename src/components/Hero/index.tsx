@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button"; 
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -88,7 +87,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg border-3 border-[#003BA1]">
               {/* Substituído Image por img padrão para corrigir o erro de compilação */}
-              <Image
+              <img
                 src={slides[currentSlide].src}
                 alt={slides[currentSlide].alt}
                 width={800}
